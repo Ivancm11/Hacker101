@@ -21,3 +21,11 @@ After that I just did another similar attack, but this time using username=' OR 
 
     -Username = ' OR 1=1#
     -Password = (The one found by the attack) <- In my case was Malcolm
+    
+## Cody's First Blog: 
+
+**- Flag 1:**
+
+To get this flag, it was just necessary to inject a php script in the write comment section. For example:
+
+    <?php echo "TEST"; ?>
