@@ -7,6 +7,15 @@ Solution to some hacker101 CTF
 
 To do that I did an Intruder bruteforce attack using BurpSuite.
 
-![asd] (imatge.png)
+First of all, I tried to get the password length, using the next SQL query.
 
+![asd](imatge.png)
 
+I captured this query with BurpSuite and sent to intruder (left clicking on the intercept), configuring it like the next image while using this payload : [1,..,15]. 
+
+![Image](screenshots/imatge.png)
+
+It turned out that the password length was 7, it was possible to know thanks to the length of the response in the intruder attack. After that I just did another similar attack, but this time using username=' OR password LIKE "_______"#, where each underscore was a possible character. For this attack I used the bruteforce payload provided by BurpSuite. When the attack finished, I logged in using: 
+
+    -Username = ' OR 1=1#
+    -Password = (The one found by the attack) <- In my case was Malcolm
