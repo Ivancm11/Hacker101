@@ -15,7 +15,9 @@ I captured this query with BurpSuite and sent to intruder (left clicking on the 
 
 ![Image](screenshots/imatge.png)
 
-It turned out that the password length was 7, it was possible to know thanks to the length of the response in the intruder attack. After that I just did another similar attack, but this time using username=' OR password LIKE "_______"#, where each underscore was a possible character. For this attack I used the bruteforce payload provided by BurpSuite. When the attack finished, I logged in using: 
+It turned out that the password length was 7, it was guessed thanks to the length of the response in the intruder attack, because for password length 7, the response length was different.
+
+After that I just did another similar attack, but this time using username=' OR password LIKE "_______"#, where each underscore was a possible character. For this attack I used the bruteforce payload provided by BurpSuite. When the attack finished, I logged in using: 
 
     -Username = ' OR 1=1#
     -Password = (The one found by the attack) <- In my case was Malcolm
