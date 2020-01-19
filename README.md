@@ -29,3 +29,11 @@ After that I just did another similar attack, but this time using username=' OR 
 To get this flag, it was just necessary to inject a php script in the write comment section. For example:
 
     <?php echo "TEST"; ?>
+    
+## PetshopPro
+
+**- Flag 1:**
+
+Add something to the shopping cart. In the checkout page, inspect element and a hidden input can be observed there, change the input to be visible and after that change the input and make some item free.
+
+
