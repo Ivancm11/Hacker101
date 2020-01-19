@@ -36,4 +36,6 @@ To get this flag, it was just necessary to inject a php script in the write comm
 
 Add something to the shopping cart. In the checkout page, view the source code. There is a hidden input, change the value of any item to 0$, and you get the flag.
 
+![Image](screenshots/petshop1.JPG)
+
 
