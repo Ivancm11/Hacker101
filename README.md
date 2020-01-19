@@ -34,6 +34,6 @@ To get this flag, it was just necessary to inject a php script in the write comm
 
 **- Flag 1:**
 
-Add something to the shopping cart. In the checkout page, inspect element and you can observe that there is a hidden input, change the input to be visible and after that change the input and make some item free and the flag appears.
+Add something to the shopping cart. In the checkout page, view the source code. There is a hidden input, change the value of any item to 0$, and you get the flag.
 
 
